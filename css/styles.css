@@ -17,10 +17,11 @@
   --hero-image-background-color: #2e2f42;
   --background-lite-color: #ffffff;
   --background-color-section-1-2-3: #e5e5e5;
+  --customers-hover-focus-active: #9747ff;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -43,7 +44,7 @@ img {
 
 a {
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 ul {
@@ -94,7 +95,7 @@ ul {
 
 .logo {
   color: var(--headings-color);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -107,7 +108,7 @@ ul {
 
 .logo-blue {
   color: var(--active-links-color);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -189,10 +190,14 @@ ul {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container-hero {
@@ -215,7 +220,7 @@ ul {
 .btn {
   background-color: var(--active-links-color);
   color: var(--background-lite-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -253,13 +258,13 @@ ul {
 }
 
 .advantages-item::before {
-    content: "";
-    display: block;
-    height: 112px;
-    background: var(--light-mode-background-color);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 8px;
+  content: "";
+  display: block;
+  height: 112px;
+  background: var(--light-mode-background-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 8px;
 }
 
 .advantages-item:nth-child(1)::before {
@@ -336,12 +341,12 @@ ul {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   width: 264px;
-    height: 428px;
+  height: 428px;
 }
 
 .section-info {
   padding: 32px 16px;
-  }
+}
 
 .section-3-subtitle {
   color: var(--overlay-color);
@@ -366,9 +371,9 @@ ul {
 }
 
 .team-social-item {
-    flex-basis: calc((100%-72px)/4);
-    width: 40px;
-    height: 40px;
+  flex-basis: calc((100%-72px) / 4);
+  width: 40px;
+  height: 40px;
 }
 
 .team-social-link {
@@ -387,7 +392,51 @@ ul {
   background-color: var(--ctas-color);
 }
 
+/* section-4 */
 
+.section-4 {
+  padding: 130px 156px 120px 156px;
+}
+
+.customers-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.customers-item {
+  flex-basis: calc((100%-120px) / 6);
+}
+
+.customers-item:hover svg,
+.customers-item:focus svg,
+.customers-item:active svg {
+  fill: var(--ctas-color);
+  border-color: var(--ctas-color);
+}
+
+.customers-icon {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--subtle-text-color);
+  border-radius: 5px;
+  fill: var(--subtle-text-color);
+}
+
+/* Footer */
 
 .footer {
   background-color: var(--overlay-color);
@@ -402,7 +451,7 @@ ul {
 
 .logo-footer {
   color: var(--light-mode-background-color);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.16;
@@ -435,7 +484,7 @@ ul {
   background-color: var(--light-mode-background-color);
   color: var(--active-links-color);
   border-color: var(--subtle-background-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -474,7 +523,7 @@ ul {
 
 .main-title {
   color: var(--overlay-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
